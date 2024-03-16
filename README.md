@@ -8,19 +8,21 @@ This project leverages the capabilities of local large language models (LLMs) an
 - **Informed Decision-Making:** Empowers farmers with the latest scientific knowledge to make well-informed decisions.
 
 ## Components
+## Components
 
 ### LLMs (Local Deployment with Ollama)
-- **Models Used:** Specify the LLMs, such as those from Hugging Face Transformers.
-- **Privacy and Offline Use:** Ollama supports local deployment of LLMs, ensuring data privacy and enabling potential offline usage.
+- **Models Used:** We employ the Mistral model, known for its efficiency and adaptability in various language tasks.
+- **Ollama Deployment:** Ollama is utilized for the local deployment of Mistral, ensuring data privacy and enabling potential offline usage. This setup allows for quick iterations and real-time model updates without compromising sensitive information.
 
 ### LangChain
-- **Agent Architecture:** LangChain's architecture promotes flexible problem-solving capabilities.
-- **Modules:** Key modules include chains, memory, and tools, which will be integral to the functionality of the AI agents.
+- **Agent Architecture:** LangChain's architecture is designed to support flexible problem-solving, allowing AI agents to adapt to a wide range of agricultural scenarios.
+- **Modules:** We leverage key LangChain modules such as chains, memory, and tools, which are crucial for the AI agents' functionality and decision-making processes.
 
 ### CrewAI
-- **Orchestration:** CrewAI plays a pivotal role in coordinating the AI agents and enhancing their collaborative efforts.
+- **Orchestration:** CrewAI orchestrates the AI agents, ensuring seamless collaboration and efficient task distribution among the agents.
 
 ### DuckDuckGo
-- **Targeted Searches:** DuckDuckGo provides the agents with the ability to conduct targeted searches for agricultural information.
+- **Targeted Searches:** DuckDuckGo is integrated to enable precise and relevant searches, providing the agents with up-to-date agricultural information.
 
+### Mistral:7B Model
 
