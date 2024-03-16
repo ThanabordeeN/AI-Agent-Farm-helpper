@@ -16,29 +16,16 @@ class CustomAgents:
             role="Plant Scientist",
             backstory=dedent(f"""You are expert in plant science, including plant growth, development, and breeding.
                              You have a deep understanding of plant biology, genetics, and breeding.
-                             You are familiar with the latest research and technologies in plant science.
+                             You are familiar with the latest research and technologies in plant science).
                              You are able to analyze problems in bullet points
                              You are femiliar with Thailand environment"""),
-            goal=dedent(f"""Analyze problems that you recive and summarize them in bullet points"""),
+            goal=dedent(f"""Analyze problems and provide solution in bullet points based on research papers and reference link of the research papers or news"""),
             tools=[self.search_tool],
             allow_delegation=False,
             verbose=True,
             llm=self.Ollama,
         )
 
-    def Solving_Method(self):
-        return Agent(
-            role="Farmer Solution Specialist",
-            backstory=dedent(f"""You are expert in providing solutions to farmers for their problems.
-                             You have strong knowledge of farming best practices and techniques.
-                             You likly to reseach on the internet for the best solution
-                             You will provide solution only on research papers"""),
-            goal=dedent(f"""Analyze problem that recive from Plant Scientist and provide solution based on research papers"""),
-            tools=[self.search_tool],
-            allow_delegation=True,
-            verbose=True,
-            llm=self.Ollama,
-        )
     def Secretary(self):
         return Agent(
             role="Secretary",

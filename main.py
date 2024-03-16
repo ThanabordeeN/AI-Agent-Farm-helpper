@@ -29,7 +29,6 @@ class CustomCrew:
 
         # Define your custom agents and tasks here
         custom_agent_1 = agents.PlantScientist()
-        custom_agent_2 = agents.Solving_Method()
         custom_agent_3 = agents.Secretary()
 
         # Custom tasks include agent name and variables as input
@@ -39,17 +38,14 @@ class CustomCrew:
             #self.var2,
         )
 
-        custom_task_2 = tasks.solution_dfine(
-            custom_agent_2,
-        )
         custom_task_3 = tasks.summary(
             custom_agent_3,
         )
 
         # Define your custom crew here
         crew = Crew(
-            agents=[custom_agent_1, custom_agent_2, custom_agent_3],
-            tasks=[custom_task_1, custom_task_2,custom_task_3],
+            agents=[custom_agent_1,custom_agent_3],
+            tasks=[custom_task_1,custom_task_3],
             verbose=1,
         )
 
